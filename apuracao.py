@@ -3,7 +3,7 @@ class Apuracao:
         self.__votos = votos
 
     def set_voto(self, voto):
-        if(len(self.__votos) <= 20000):
+        if(len(self.__votos) < 2):
             self.__votos.append(voto)
         else:
             print('Limite de eleitores atingido!')
